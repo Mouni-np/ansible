@@ -6,16 +6,16 @@
     TRAINER: "Sivakumar"
   #vars_files:
   #- vars.yaml
-  vars_prompt:
-  - name: COURSE
-    prompt: enter course name
-    private: false # means not confidential we can able to see what we are entering
-  - name: TRAINER
-    prompt: Enter the trainer name
-    private: false
-  - name: DURATION
-    prompt: enter the duration
-    private: false
+  # vars_prompt:
+  # - name: COURSE
+  #   prompt: enter course name
+  #   private: false # means not confidential we can able to see what we are entering
+  # - name: TRAINER
+  #   prompt: Enter the trainer name
+  #   private: false
+  # - name: DURATION
+  #   prompt: enter the duration
+  #   private: false
   tasks:
   - name: print the information
     vars:
@@ -30,3 +30,4 @@
 #2-tasklevel
 #3-files
 #4-prompt
+#5-
