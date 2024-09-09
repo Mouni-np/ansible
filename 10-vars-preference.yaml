@@ -4,8 +4,8 @@
     COURSE: "DevOps with AWS from play level"
     DURATION: "120HRS"
     TRAINER: "Sivakumar"
-  vars_files:
-  - vars.yaml
+  #vars_files:
+  #- vars.yaml
   vars_prompt:
   - name: COURSE
     prompt: enter course name
@@ -24,3 +24,9 @@
       #TRAINER: "Sivakumar"
     ansible.builtin.debug:
       msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
+
+
+#1-args
+#2-tasklevel
+#3-files
+#4-prompt
