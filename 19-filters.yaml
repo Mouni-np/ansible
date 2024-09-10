@@ -22,7 +22,7 @@
       vars:
         numbers: [1,2,3,45,4,3,2]
       ansible.builtin.debug:
-        msg:  "{{ numbers | unique }}"
+        msg:  " {{ numbers | unique }}"
     
     - name: get the min and max
       vars:
@@ -32,8 +32,9 @@
 
     - name: convert map to list
       vars:
-        COURSE: "DevOps with AWS"
-        DURATION: "120HRS"
-        TRAINER: "Sivakumar"
+        Course:
+          name: "DevOps with AWS"
+          DURATION: "120HRS"
+          TRAINER: "Sivakumar"
       ansible.builtin.debug:
-        msg: '{{ course | dict2items }}'
+        msg: '{{ Course | dict2items }}'
