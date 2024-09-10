@@ -1,5 +1,6 @@
 - name: devops course 
   hosts: local
+  connection: local # dont ask for username and passwd
   vars:
     course: "Devops with AWS" #string
     duration: 120 # number
