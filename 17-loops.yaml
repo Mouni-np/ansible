@@ -7,7 +7,7 @@
         name: "{{item}}"
         state: present
       loop: 
-      - mysql
+      - mysql #item --> it is a reserved key word
       - nginx
       - postfix
       - httpd

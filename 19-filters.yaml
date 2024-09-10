@@ -1,0 +1,7 @@
+- name: demo on filters/funtions
+  hosts: local
+  connection: local
+  tasks:
+    - name: print default variable
+      ansible.builtin.debug:
+        msg: "hello {{ course | default('Ansible') }}" #if we didnt declare any value to the variable(course) it will take the value from declared in default(ansible)
