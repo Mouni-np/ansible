@@ -8,7 +8,7 @@
 
     - name: convert to uppercase
       vars:
-        greetings: "hello ram"
+        greetings: "Hello Ram"
       ansible.builtin.debug:
         msg:  "{{ greetings | upper }}" 
       
@@ -17,3 +17,9 @@
         greetings: "hello ram"
       ansible.builtin.debug:
         msg:  "{{ greetings | lower }}"
+
+    - name: get the unique values
+      vars:
+        numbers: [1,2,3,45,4,3,2]
+      ansible.builtin.debug:
+        msg:  "{{ numbers | unique }}"
