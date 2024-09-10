@@ -1,0 +1,16 @@
+- name: check a nmbr is less than 10 or not
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: number
+    prompt: enter the number
+    private: false #not confidential i.e we can able to see what we are entering in the prompt
+  tasks:
+  - name: print this if less than 10
+    ansible.builtin.debug:
+      msg: "given nmbr {{number}} is less than 10 "
+    when: number < 10 #expression
+  - name: print this if greater than or equal to 10
+    ansible.builtin.debug:
+      msg: "given nmbr {{number}} is greater than or equal to 10 "
+    when: number >= 10 #expression
