@@ -5,6 +5,9 @@
   - name: execute the command
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
   
+  #ansible.builtin.shell--works for complex like pipes,redirectories
+  #ansible.builtin.command--works for simple commands
+
   - name: check the process
-    ansible.builtin.command: ps -ef | grep ssh
+    ansible.builtin.shell: ps -ef | grep ssh
     register: output
