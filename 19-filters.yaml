@@ -5,3 +5,15 @@
     - name: print default variable
       ansible.builtin.debug:
         msg: "hello {{ course | default('Ansible') }}" #if we didnt declare any value to the variable(course) it will take the value from declared in default(ansible)
+
+    - name: convert to uppercase
+      vars:
+        greetings: "hello ram"
+      ansible.builtin.debug:
+        msg:  "{{ greetings | upper }}" 
+      
+    - name: convert to lowercase
+      vars:
+        greetings: "hello ram"
+      ansible.builtin.debug:
+        msg:  "{{ greetings | lower }}"
