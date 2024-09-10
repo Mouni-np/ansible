@@ -2,7 +2,7 @@
   hosts: web
   become: yes
   tasks:
-  - nmae: print the statistics
+  - name: print the statistics
     ansible.builtin.debug:
       msg: "{{ansible_facts}}"
   
