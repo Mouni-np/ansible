@@ -69,7 +69,7 @@
     sg_id: "sg-0e0193caffb24b83c"
     ami_id: "ami-09c813fb71547fc4f"
     instances:
-    - mysql
+    - mysqlllll
     - backend
     - frontend
     zone: aws-devops.site
